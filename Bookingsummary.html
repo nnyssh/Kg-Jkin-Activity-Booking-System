@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Summary</title>
+  <link rel="stylesheet" href="Bookingsummary.css">
+</head>
+<body>
+    <body>
+        <header class="site-header">
+          <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <span>Kg Jkin</span>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#package">PACKAGE</a></li>
+              <li><a href="#booking">BOOKING</a></li>
+            </ul>
+          </nav>
+        </header>
+      </body>
+
+  <main class="booking-summary">
+    <div class="rides-container">
+      <div class="ride">
+        <img src="img/atv1.jpg" alt="ATV Fun Ride">
+        <div class="ride-details">
+          <h2>ATV FUN RIDE</h2>
+          <p>Slot: 1</p>
+          <p>No. of pax: <span id="pax-fun">2</span></p>
+        </div>
+        <div class="ride-price">
+          <h2>RM 100</h2>
+          <p>RM50 / pax</p>
+          <a href="#" class="edit">Edit</a>
+          <a href="#" class="remove">Remove</a>
+        </div>
+      </div>
+      <div class="ride">
+        <img src="img/atv2.png" alt="ATV Extreme Ride">
+        <div class="ride-details">
+          <h2>ATV EXTREME RIDE</h2>
+          <p>Slot: 1</p>
+          <p>No. of pax: <span id="pax-extreme">1</span></p>
+        </div>
+        <div class="ride-price">
+          <h2>RM 100</h2>
+          <p>RM100 / pax</p>
+          <a href="#" class="edit">Edit</a>
+          <a href="#" class="remove">Remove</a>
+        </div>
+      </div>
+    </div>
+    <body>
+        <div class="summary-container">
+          <h1>BOOKING DETAILS</h1>
+          <div id="summaryDetails"></div>
+        </div>
+
+
+  <script>
+    // Retrieve booking details from localStorage
+    const bookingDetails = JSON.parse(localStorage.getItem('bookingDetails'));
+
+    if (bookingDetails) {
+      const summaryDiv = document.getElementById('summaryDetails');
+      summaryDiv.innerHTML = `
+        <p><div class="summary-item"><span>Date:</span> ${bookingDetails.date}</div>
+        <div class="summary-item"><span>Adults:</span> ${bookingDetails.adults}</div>
+        <div class="summary-item"><span>Children:</span> ${bookingDetails.children}</div>
+        <div class="summary-item"><span>Slot:</span> ${bookingDetails.slot}</div></p>
+      `;
+    } else {
+      document.getElementById('summaryDetails').innerHTML = '<p>No booking details found.</p>';
+    }
+  </script>
+</body>
+</html>

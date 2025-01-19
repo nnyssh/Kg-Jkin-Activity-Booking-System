@@ -1,0 +1,222 @@
+header {
+    background-color: #d2b48c; /* Matching the beige background */
+    color: #000; /* Use a dark font for better contrast */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  header img {
+    height: 50px;
+    margin-right: 1rem;
+  }
+
+  .site-header .logo span {
+    font-size: 1.5em;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    color: #120902;
+  }
+  
+  
+  header h1 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 2rem; /* Equal spacing between nav links */
+    margin-left: auto; /* Pushes the nav to the right */
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #f4a261;
+  }
+  
+
+  .booking-section {
+    display: flex;
+    flex-direction: row; /* Default for larger screens */
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+}
+
+@media (max-width: 768px) {
+    .booking-section {
+        flex-direction: column; /* Stack elements for small screens */
+    }
+}
+
+h1{
+    text-align: center;
+    font-family: 'Verdana', Courier;
+}
+
+h2{
+    font-family: 'Verdana', Courier;
+    font-weight: bold;
+}
+.image-container img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    height: 450px;
+}
+
+/* Slots Section */
+.slots-container {
+    flex: 1;
+}
+
+.slots-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.slots {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.slot {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slot:hover {
+    background-color: #555;
+    transform: scale(1.03);
+}
+
+/* Summary Container Styles */
+.summary-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.summary-container label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.summary-container input[type="date"],
+.summary-container input[type="number"] {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+.book-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    margin: 0.5em;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.book-btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .booking-section {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+ 
+    footer {
+        background-color: #d2b48c; /* Matching the beige background */
+        color: #000; /* Use a dark font for better contrast */
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between; /* Space between logo and navigation */
+        align-items: center;
+      }
+      
+      .footer-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    }

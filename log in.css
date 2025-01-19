@@ -1,0 +1,102 @@
+
+/* Site Header Styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #d6bb9f; /* Smokey color background */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Keep the header on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+  }
+  
+  .site-header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-header .logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .site-header .logo span {
+    font-size: 1.5em;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    color: #120902;
+  }
+  
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #f4a261;
+  }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.section {
+    margin: 2rem 0;
+}
+
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form input {
+    width: calc(100% - 2rem);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 0.7rem 1.5rem;
+    background: #004d40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #00695c;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #004d40;
+    color: white;
+}
